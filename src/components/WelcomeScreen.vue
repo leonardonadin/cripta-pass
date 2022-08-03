@@ -27,8 +27,6 @@
                         <v-icon>mdi-lock</v-icon>
                     </template>
                 </v-text-field>
-                <input type="text" v-model="test"
-                    style="width: 100%; height: 50px; color: dark; font-size: 20px; padding: 5px;">
 
                 <v-btn
                     color="primary"
@@ -49,7 +47,8 @@
         }),
         methods: {
             storePass() {
-                localStorage.setItem('pass', this.pass)
+                localStorage.setItem('pass', this.pass);
+                this.$router.push('/about');
             }
         }
     }
