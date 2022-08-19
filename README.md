@@ -1,5 +1,7 @@
 # cripta-pass
 
+Electron Vue project to password management
+
 ## Project setup
 ```
 npm install
